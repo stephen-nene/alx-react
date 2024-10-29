@@ -23,7 +23,14 @@ module.exports = {
       {
         test: /\.(gif|png|jpe?g|jpg|svg)$/i,
         use: [
-          "file-loader",
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "assets",
+              publicPath: "assets", // Ensures paths in CSS are correct
+            },
+          },
           {
             loader: "image-webpack-loader",
             options: {
@@ -32,7 +39,7 @@ module.exports = {
             },
           },
         ],
-      },
+      }      
     ],
   },
 };
