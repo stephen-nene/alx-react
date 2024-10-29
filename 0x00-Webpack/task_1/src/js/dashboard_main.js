@@ -3,6 +3,7 @@ import _ from 'lodash';
 
 let count = 0;
 
+// function to modify the count
 function updateCounter() {
   count += 1;
   $('#count').text(`${count} clicks on the button`);
