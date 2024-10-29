@@ -1,3 +1,8 @@
+#count {
+  font-weight: bold;
+  display: inline;
+  margin: 0; 
+}
 #logo {
     width: 200px;
     height: 200px;
@@ -5,9 +10,4 @@
     background-size: cover;
   }
   
-  #count {
-    font-weight: bold;
-    display: inline;
-    margin-left: 10px; 
-  }
   
