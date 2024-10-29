@@ -8,7 +8,7 @@ function updateCounter() {
   $('#count').text(`${count} clicks on the button`);
 }
 
-$(function() {
+
   // Add elements in the specified order
   $('body').append('<p>Holberton Dashboard</p>');
   $('body').append('<p>Dashboard data for the students</p>');
@@ -18,4 +18,4 @@ $(function() {
 
   // Bind the debounced updateCounter function to the button click event
   $('#start-button').on('click', _.debounce(updateCounter, 300));
-});
+
